@@ -33,7 +33,7 @@ That's why the frame numbers appear reversed on the flipped view. Here is the di
 
 <img width="899" height="173" alt="run_up" src="https://github.com/user-attachments/assets/f75b8f03-3330-4062-9df4-e531422b9d84" />
 
-- [Watch running animation demo](https://github.com/user-attachments/assets/1d496885-69ba-4465-8c2b-1eeb37597bcd)
+- ![Player running animation](readme-assets/running_animation.gif)
 
 ### 2. Attacking Animation & Hitbox
 - Added the `attack` input action.
@@ -41,13 +41,13 @@ That's why the frame numbers appear reversed on the flipped view. Here is the di
 
 <img width="254" height="85" alt="attack_input" src="https://github.com/user-attachments/assets/65187665-a8b3-4c1a-aaf4-ff62b12c0f92" />
 
-- [Watch attacking animation demo](https://github.com/user-attachments/assets/048a542f-cd16-4419-812a-f20e76d34922)
+- ![Player attacking animation](readme-assets/hitting_animation.gif)
 
 ### 3. Dealing Damage & Enemy Behavior
 - Attacks hitting enemies (`Slime*`) deal `20` damage (`strength`) and pass the attacker's position.
 - Enemies (`100` HP) chase the `Player` within their `Sight` area, update their `HealthBar`, apply a `0.5s` cubic ease-out knockback tween on hit, play damage/death sound effects, and disable collisions when defeated.
 
-- [Watch enemy damage & combat demo](https://github.com/user-attachments/assets/dc1f2787-1117-45df-80e7-bb673521030d)
+- ![Enemy damage and combat](readme-assets/hitting_enemy_animation.gif)
 
 ---
 
