@@ -421,6 +421,9 @@ animations = [{
 "speed": 7.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dqkch"]
+size = Vector2(13.25, 8)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qhqgy"]
 size = Vector2(15, 15)
 
@@ -433,12 +436,17 @@ sprite_frames = SubResource("SpriteFrames_vq3lt")
 animation = &"attack_right"
 frame = 3
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=981146052]
+position = Vector2(0.625, 5)
+shape = SubResource("RectangleShape2D_dqkch")
+
 [node name="SwingSword" type="AudioStreamPlayer2D" parent="." unique_id=774688131]
 stream = ExtResource("3_qhqgy")
 pitch_scale = 3.0
 
 [node name="Hitbox" type="Area2D" parent="." unique_id=1028643792]
 position = Vector2(7.5, 1)
+collision_mask = 2
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1968705537]
