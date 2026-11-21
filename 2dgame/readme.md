@@ -13,23 +13,27 @@ A 2D action RPG prototype built in **Godot (GDScript)**, following the [@CodeWit
 - **Input Map:** Configured movement actions (`left`, `right`, `up`, `down`) for arrow keys and **WASD**.
 - **Horizontal Flipping:** Left and right movement share the same base animation (`*_right`) and flip horizontally (`flip_h`) when facing left, avoiding duplicate sprite sheets
 
-<img width="239" height="293" alt="InputMap" src="[https://github.com/user-attachments/assets/e1667fd7-26fb-438e-97bf-f52580f04c52](https://github.com/user-attachments/assets/e1667fd7-26fb-438e-97bf-f52580f04c52)" />
+<img width="239" height="293" alt="InputMap" src="https://github.com/user-attachments/assets/957417b3-99c7-43b8-9ec0-0e01045afc91" />
 
 **Running Down**  
-<img width="894" height="159" alt="run_down" src="[https://github.com/user-attachments/assets/be7e9db0-d871-40fb-aff2-01737baa85d6](https://github.com/user-attachments/assets/be7e9db0-d871-40fb-aff2-01737baa85d6)" />
+
+<img width="894" height="159" alt="run_down" src="https://github.com/user-attachments/assets/77df2ec3-e2ff-44dc-89ed-e6936aa18389" />
 
 **Running Left & Right**  
-<img width="878" height="155" alt="run_left" src="[https://github.com/user-attachments/assets/f2b99573-71cd-467b-be30-4d7e844ef6f0](https://github.com/user-attachments/assets/f2b99573-71cd-467b-be30-4d7e844ef6f0)" />
-<img width="878" height="155" alt="run_right" src="[https://github.com/user-attachments/assets/472df9f3-0890-40fa-a516-2e2b1fd1d5e4](https://github.com/user-attachments/assets/472df9f3-0890-40fa-a516-2e2b1fd1d5e4)" />
+
+<img width="878" height="155" alt="run_left" src="https://github.com/user-attachments/assets/9533515e-598d-4ed3-b7cf-547f20c28813" />
+<img width="878" height="155" alt="run_right" src="https://github.com/user-attachments/assets/d2425610-b61e-40bd-9dfc-cea79bb92e07" />
+
 
 That's why the frame numbers appear reversed on the flipped view. Here is the direction and animation flipping logic:
 
-<img width="589" height="206" alt="code_direction_fragment" src="[https://github.com/user-attachments/assets/258bdae0-b261-4c72-b777-db018f497b67](https://github.com/user-attachments/assets/258bdae0-b261-4c72-b777-db018f497b67)" />
+<img width="589" height="206" alt="code_direction_fragment" src="https://github.com/user-attachments/assets/0b43183e-3de4-47b5-8645-afabd99e2bb3" />
 
 **Running Up**  
-<img width="899" height="173" alt="run_up" src="https://github.com/user-attachments/assets/a376c7c7-74ef-434f-b432-81a912869572" />
 
-- [Watch running animation demo](https://github.com/user-attachments/assets/0cac7a33-ab7c-48cd-9101-010a6e275cd8)
+<img width="899" height="173" alt="run_up" src="https://github.com/user-attachments/assets/f75b8f03-3330-4062-9df4-e531422b9d84" />
+
+- [Watch running animation demo](https://github.com/user-attachments/assets/1d496885-69ba-4465-8c2b-1eeb37597bcd)
 
 ### 2. Attacking Animation & Hitbox
 - Added the `attack` input action.
@@ -37,13 +41,13 @@ That's why the frame numbers appear reversed on the flipped view. Here is the di
 
 <img width="254" height="85" alt="attack_input" src="https://github.com/user-attachments/assets/65187665-a8b3-4c1a-aaf4-ff62b12c0f92" />
 
-- [Watch attacking animation demo](https://github.com/user-attachments/assets/70e1a530-6144-4980-b29b-5e74d60543f6)
+- [Watch attacking animation demo](https://github.com/user-attachments/assets/048a542f-cd16-4419-812a-f20e76d34922)
 
 ### 3. Dealing Damage & Enemy Behavior
 - Attacks hitting enemies (`Slime*`) deal `20` damage (`strength`) and pass the attacker's position.
 - Enemies (`100` HP) chase the `Player` within their `Sight` area, update their `HealthBar`, apply a `0.5s` cubic ease-out knockback tween on hit, play damage/death sound effects, and disable collisions when defeated.
 
-- [Watch enemy damage & combat demo](https://github.com/user-attachments/assets/8b9df29a-e5f1-400a-804b-265cbddfe55a)
+- [Watch enemy damage & combat demo](https://github.com/user-attachments/assets/dc1f2787-1117-45df-80e7-bb673521030d)
 
 ---
 
